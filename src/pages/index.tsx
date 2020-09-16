@@ -4,7 +4,6 @@ import { Stack } from "@chakra-ui/core";
 import { MainLayout } from "../components/layouts/MainLayout";
 import { Banner } from "../components/Banner";
 import { Exhibition } from "../components/Exhibition";
-import { select } from "underscore";
 
 const StackOption = () => {
   const dateOption = [];
