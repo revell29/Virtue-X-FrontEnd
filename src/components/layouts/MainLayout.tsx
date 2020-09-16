@@ -73,7 +73,7 @@ const Navbar = ({ title }) => {
             </li>
           </ul>
           <div className="ml-auto w-full sm:w-auto flex items-center justify-end">
-            <div class="w-px h-6 mx-6 mr-8 bg-gray-200 hidden sm:block"></div>
+            <div className="w-px h-6 mx-6 mr-8 bg-gray-200 hidden sm:block"></div>
             <div className="relative flex-shrink-0">
               <button
                 onClick={(e) => setHidePop((prevState) => !prevState)}
