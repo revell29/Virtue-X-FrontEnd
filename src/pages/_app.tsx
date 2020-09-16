@@ -12,11 +12,11 @@ import App from "next/app";
 
 class MyApp extends App {
   render() {
-    const { Component } = this.props;
+    const { Component, pageProps } = this.props;
     return (
       <ThemeProvider theme={Theme}>
         <CSSReset />
-        <Component />
+        <Component {...pageProps} />
       </ThemeProvider>
     );
   }

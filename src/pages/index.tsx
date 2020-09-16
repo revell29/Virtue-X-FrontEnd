@@ -1,5 +1,4 @@
 import Head from "next/head";
-import styles from "../../styles/Home.module.css";
 import { Stack } from "@chakra-ui/core";
 import { MainLayout } from "../components/layouts/MainLayout";
 import { Banner } from "../components/Banner";
