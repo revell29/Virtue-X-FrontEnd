@@ -3,6 +3,7 @@ import styles from "../../styles/Home.module.css";
 import { Stack } from "@chakra-ui/core";
 import { MainLayout } from "../components/layouts/MainLayout";
 import { Banner } from "../components/Banner";
+import { Exhibition } from "../components/Exhibition";
 import { select } from "underscore";
 
 const StackOption = () => {
@@ -51,6 +52,37 @@ export default function Home() {
     <MainLayout>
       <Banner />
       <StackOption />
+      <div className="container mx-auto py-20">
+        <div className="w-9/12">
+          <h2 className="text-5xl font-bold text-red-500">Exhibition</h2>
+          <p className="leading-relaxed text-gray-600">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <Exhibition />
+      </div>
+      <div className="bg-red-500 py-20">
+        <div className="container mx-auto">
+          <div className="w-7/12">
+            <h5 className="text-4xl text-white font-bold">Reccomended by Us</h5>
+            <h4 className="text-6xl text-white font-bold mt-5">
+              INDOFURNITURE AUGUST 2020
+            </h4>
+            <a
+              href="#"
+              className="py-2 px-10 border-2 border-white text-white font-semibold inline-block mt-5 hover:bg-white hover:text-gray-700"
+            >
+              View Exhibition
+            </a>
+          </div>
+        </div>
+      </div>
     </MainLayout>
   );
 }

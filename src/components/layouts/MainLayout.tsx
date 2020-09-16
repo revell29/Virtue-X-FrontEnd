@@ -72,11 +72,12 @@ const Navbar = ({ title }) => {
               </a>
             </li>
           </ul>
-          <div className="ml-auto w-full sm:w-auto flex items-center">
+          <div className="ml-auto w-full sm:w-auto flex items-center justify-end">
+            <div class="w-px h-6 mx-6 mr-8 bg-gray-200 hidden sm:block"></div>
             <div className="relative flex-shrink-0">
               <button
                 onClick={(e) => setHidePop((prevState) => !prevState)}
-                className="items-center bg-red-600 rounded-full hover:bg-red-700 text-white px-6 py-2 rounded mr-6 hidden sm:flex focus:outline-none"
+                className="items-center bg-red-600 rounded-full hover:bg-red-700 text-white px-6 py-2  mr-6  sm:flex focus:outline-none"
               >
                 Sign In
               </button>
